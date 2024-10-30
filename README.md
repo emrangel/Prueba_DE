@@ -1,16 +1,16 @@
 # Prueba_DE
 
-PRUEBA - DATA ENGINEER
+## PRUEBA - DATA ENGINEER
 
 La siguiente prueba tiene como finalidad medir sus capacidades en diferentes aspectos fundamentales para la inteligencia de negocios, tanto en idioma español como inglés.
 Los aspectos que se  van a medir son los siguientes:
 
-1.	Capacidad Analítica: Capacidad de transformar datos con el fin de poder responder preguntas de negocio por medio de tableros o reportes a la medida.
-2.	Capacidad de Programación: Capacidad de representar mediante algoritmos soluciones frente a situaciones o requerimientos analíticos y poder transformarlos en diferentes lenguajes de programación.
-3.	Análisis Situacional: Capacidad de Analizar diferentes situaciones organizacionales que tienen un grado de incertidumbre y requieren la administración oportuna del riesgo.
-Le solicitamos que responda estas preguntas a conciencia y como a usted considere que puede ser la  manera de llegar a una solución efectiva y oportuna, dado que eventualmente se le pedirá que justifique sus respuestas. La prueba tendrá preguntas de respuesta abierta, querys SQL y opción múltiple. 
+1.	**Capacidad Analítica**: Capacidad de transformar datos con el fin de poder responder preguntas de negocio por medio de tableros o reportes a la medida.
+2.	**Capacidad de Programación**: Capacidad de representar mediante algoritmos soluciones frente a situaciones o requerimientos analíticos y poder transformarlos en diferentes lenguajes de programación.
+3.	**Análisis Situacional**: Capacidad de Analizar diferentes situaciones organizacionales que tienen un grado de incertidumbre y requieren la administración oportuna del riesgo.
+Le solicitamos que responda estas preguntas a conciencia y como a usted considere que puede ser la  manera de llegar a una solución efectiva y oportuna, dado que eventualmente se le pedirá que justifique sus respuestas. La prueba tendrá preguntas de respuesta abierta, querys SQL y opción múltiple.
 
-PREGUNTAS - Análisis Situacional
+## Preguntas - Análisis Situacional
 
 1.	Una Empresa de Retail, que tiene aproximadamente 50.000 clientes registrados en sus bases de datos y unas ventas mensuales de aproximadamente $10 mil millones, la cual  realiza ventas tanto de manera presencial como en su comercio electrónico, debe presentar a la junta directiva cada mes todos los indicadores que muestren como van funcionando las áreas de la compañía, por eso hasta hace poco el área de TI enviaba una sábana de datos que sacan directamente desde el ERP a una secretaria de la parte administrativa que tiene muchos conocimientos en Excel que se encarga de sacar los datos y enviarlos a cada área para que saquen sus indicadores de gestión y luego ella poder consolidarlo en un Power Point para la gerencia. 
 Actualmente dicha sabana de datos está quedando pequeña por la limitación que tiene Excel en la cantidad de filas  y se les solicito a TI enviar los datos resumidos según una estructura definida por la secretaria encargada de la consolidación; adicionalmente las áreas aprovechan esos datos enviados cada mes para tomar decisiones dentro del área, pero se están dando cuenta que dichas decisiones no están ajustadas a la realidad del negocio, ya que por las estrategias realizadas por mercadeo, los clientes se vienen incrementando al igual que las ventas, por eso las decisiones tomadas son tardías y no dan abasto con los pedidos hechos ya que el inventario se les agota muy rápido.
@@ -24,7 +24,10 @@ Tenga en cuenta las siguientes aclaraciones:
 Según la situación presentada, por favor responda las siguientes preguntas.
 
 a.	¿Cómo explicaría la problemática actual de la compañía?
-b.	¿Qué solución propone para el problema que enfrenta actualmente la compañía que permita tener un entorno analítico escalable y administrable? Debe detallar los siguientes elementos: 
+
+b.	¿Qué solución propone para el problema que enfrenta actualmente la compañía que permita tener un entorno analítico escalable y administrable? 
+
+Debe detallar los siguientes elementos: 
 a.	Arquitectura
 b.	Infraestructura
 c.	Solución a nivel de datos
@@ -85,7 +88,7 @@ Según lo anterior, resuelva:
 a. Una expresión en pseudocódigo o el lenguaje de su preferencia del algoritmo expresado en la lógica.
 b. ¿Si tuviera que llevar este algoritmo a producción cómo lo haría?
 
-SQL - Capacidad Analítica
+### SQL - Capacidad Analítica
 
 4.	Select the code which shows all abi_email which starts with 'john' or 'phillip'.
 A	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' OR abi_email LIKE 'phillip%'
@@ -158,13 +161,17 @@ The assigned ID is called td_id and for the same identified consumer, the same t
 To identify the same consumer across multiple rows of data, we use different columns that are considered consumer IDs. For this scenario, we will consider the following columns as consumer IDs:
 
 A	cookie_id 
+
 B	abi_email 
+
 C	abi_phone 
 
 Considering above, we want you to work with the source_table table. 
 Example (please check the image below): 
-A	Despite of having 4 consumer records in the source_table, after the unification process they were identified as ony 2 different consumers, because the r_number 1 and 3 shared the same cookie_id and r_number 2 and 4 shared the same abi_email. 
-B	The table after the unification process, should be like the result table below (the one with td_id in last column).
+
+A.	Despite of having 4 consumer records in the source_table, after the unification process they were identified as ony 2 different consumers, because the r_number 1 and 3 shared the same cookie_id and r_number 2 and 4 shared the same abi_email. 
+
+B.	The table after the unification process, should be like the result table below (the one with td_id in last column).
 
  ![alt text](images/image4.png)
 
@@ -191,9 +198,9 @@ Considering this, we want you to work with the consent table data (abi_consents)
 
 3. For any other case, the consumer consent will be classified as Unknown. 
 
-Example: 
+**Example:**
 
-iIf the table contains a row with TC-PP and another row with MARKETING-ACTIVATION for a specific consumer and specific brand, the consumer consent have to be classified as "OptedIn" for that brand. 
+if the table contains a row with TC-PP and another row with MARKETING-ACTIVATION for a specific consumer and specific brand, the consumer consent have to be classified as "OptedIn" for that brand. 
 If the table contains only a row with TC-PP for a specific consumer and brand, the consent have to be classified as "Not Given".
 
 Using the same table abi_consents, create a query to process the input table according to the BUSINESS RULES described in the section description above. 
@@ -208,13 +215,13 @@ Go to https://sqliteonline.com/ and use the DDL below to create the environment 
 
 CREATE TABLE abi_consents ( client_id VARCHAR(4), brand_name VARCHAR(15), consent VARCHAR(20) ); INSERT INTO abi_consents VALUES ('AF32', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('AF32', 'BRAHMA', 'MARKETINGACTIVATION'); INSERT INTO abi_consents VALUES ('YD71', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('ODA2', 'BRAHMA', null); INSERT INTO abi_consents VALUES ('LA94', 'BRAHMA', 'MARKETINGACTIVATION'); INSERT INTO abi_consents VALUES ('JA13', 'BRAHMA', 'MARKETING-ANALYTICS'); INSERT INTO abi_consents VALUES ('JA13', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('YD71', 'SKOL', 'TC-PP'); INSERT INTO abi_consents VALUES ('YD71', 'SKOL', 'MARKETING-ACTIVATION'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', 'TC-PP'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', 'MARKETING-ACTIVATION'); INSERT INTO abi_consents VALUES ('OSW1', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', null);
 
-Python y SQL  - Capacidad de Programación (Realice solamente dos - Libre elección):
+### Python y SQL  - Capacidad de Programación (Realice solamente dos - Libre elección):
 
 12.	Programación Orientada a Objetos: Diseñe una clase vehículo, el cual tenga 4 variables: una para el color del vehículo, marca del vehículo, cantidad de llantas y velocidad del vehículo, esta clase debe contar con los métodos que retornan y modifican estos valores, es decir que en la ejecución del programa se pueda:
 
-●	Saber a qué velocidad va un objeto tipo vehículo.
-●	Poder reducir o aumentar este valor.
-●	El programa debe aceptar vehículos de dos (Motos) o cuatro ruedas (Carros).
+-	Saber a qué velocidad va un objeto tipo vehículo.
+-	Poder reducir o aumentar este valor.
+-	El programa debe aceptar vehículos de dos (Motos) o cuatro ruedas (Carros).
 
 Si ve necesario implementar clases abstractas puede implementarlas.
 Adjunte la respuesta en un notebook en colab. Comparta el link de forma pública 
