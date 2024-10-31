@@ -36,6 +36,12 @@ c.	¿Qué metodología utilizaría para la construcción y validación de la sol
 d.	Represente de manera gráfica como sería la arquitectura de la solución.
 e.	¿Qué tecnologías utilizaría para la construcción de dicha solución?
 
+===================================================
+
+# [**RESPUESTA 1**](respuestas/markdown/respuesta_1.md)
+
+===================================================
+
 2.	Dadas las siguientes tablas de una base de datos, por favor construya las sentencias SQL que den respuestas a unas preguntas de negocio que se le plantean
 
 ### TABLA DE VENTAS
@@ -73,8 +79,16 @@ e.	¿Qué tecnologías utilizaría para la construcción de dicha solución?
 
 
 a.	Realice una sentencia SQL que permita sacar el total de ventas por Canal de venta
+
 b.	Realice una sentencia SQL que permita sacar el promedio de ventas por Genero
+
 c.	Realice una sentencia SQL que permita saber el costo total por mes y por ciudad
+
+===================================================
+
+# [**RESPUESTA 2**](respuestas/sql/respuesta_2.sql)
+
+===================================================
 
 3.	Una compañía de retail necesita definir desde febrero una solución para motivar a su equipo comercial a vender más durante el mes de marzo, teniendo en cuenta las siguientes reglas de negocio:
 - La compensación por alcanzar las metas de ventas se dará en puntos redimibles por productos dentro de la compañía. Eso quiere decir que por cada x valor en punto debe cumplir con z valor en ventas, para redimir los puntos asignados.
@@ -86,23 +100,42 @@ c.	Realice una sentencia SQL que permita saber el costo total por mes y por ciud
 Según lo anterior, resuelva:
 
 a. Una expresión en pseudocódigo o el lenguaje de su preferencia del algoritmo expresado en la lógica.
+
 b. ¿Si tuviera que llevar este algoritmo a producción cómo lo haría?
+
+===================================================
+
+# [**RESPUESTA 3**](respuestas/markdown/respuesta_3.md)
+
+===================================================
 
 ### SQL - Capacidad Analítica
 
 4.	Select the code which shows all abi_email which starts with 'john' or 'phillip'.
-A	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' OR abi_email LIKE 'phillip%'
-B	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' OR 'phillip%' 
-C	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' AND abi_email LIKE 'phillip%' 
-D	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' AND 'phillip%' 
-E	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE '%john' OR abi_email LIKE '%phillip
+- A)	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' OR abi_email LIKE 'phillip%'
+- B)	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' OR 'phillip%' 
+- C)	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' AND abi_email LIKE 'phillip%' 
+- D)	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE 'john%' AND 'phillip%' 
+- E)	SELECT abi_email FROM usa_web_form WHERE abi_email LIKE '%john' OR abi_email LIKE '%phillip
+
+===================================================
+
+# [**RESPUESTA 4 - A**]
+
+===================================================
 
 5.	Select the code that shows, in a single row, how many unique abi_email were obtained in td_host www.budweiser.com with abi_age between 21 and 34
-A	SELECT COUNT(DISTINCT abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN 21 AND 34  
-B	SELECT COUNT(DISTINCT abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND BETWEEN (21, 34) 
-C	SELECT COUNT(abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN 21 AND 34 
-D	SELECT DISTINCT abi_email FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN (21, 34) 
-E	SELECT abi_email FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN (21, 34)
+- A)	SELECT COUNT(DISTINCT abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN 21 AND 34  
+- B)	SELECT COUNT(DISTINCT abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND BETWEEN (21, 34) 
+- C)	SELECT COUNT(abi_email) FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN 21 AND 34 
+- D)	SELECT DISTINCT abi_email FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN (21, 34) 
+- E)	SELECT abi_email FROM usa_web_form WHERE td_host = 'www.budweiser.com' AND abi_age BETWEEN (21, 34)
+
+===================================================
+
+# [**RESPUESTA 5 - A**]
+
+===================================================
 
 6.	What does the following SQL code retrieves? 
 WITH tmp AS 
@@ -113,10 +146,16 @@ SELECT COUNT(DISTINCT abi_email)
 FROM usa_web_form 
 WHERE abi_email IN (SELECT * FROM tmp)
 
-A	Will return the amount of all unique abi_email from usa_web_form that can be found also in usa_ecommerce_customers and have abi_age 21 or higher in usa_ecommerce_customers  
-B	Will return the amount of all unique abi_email from usa_web_form added with all abi_email from usa_ecommerce_customers and have abi_age 21 or higher  
-C	Will return a list of all abi_email from usa_web_form that can be found also in usa_ecommerce_customers and have abi_age 21 or higher in usa_ecommerce_customers 
-D	Will return a list of all abi_email from usa_web_form added with all abi_email from usa_ecommerce_customers and have abi_age 21 or higher
+- A)	Will return the amount of all unique abi_email from usa_web_form that can be found also in usa_ecommerce_customers and have abi_age 21 or higher in usa_ecommerce_customers  
+- B)	Will return the amount of all unique abi_email from usa_web_form added with all abi_email from usa_ecommerce_customers and have abi_age 21 or higher  
+- C)	Will return a list of all abi_email from usa_web_form that can be found also in usa_ecommerce_customers and have abi_age 21 or higher in usa_ecommerce_customers 
+- D)	Will return a list of all abi_email from usa_web_form added with all abi_email from usa_ecommerce_customers and have abi_age 21 or higher
+
+===================================================
+
+# [**RESPUESTA 6 - A**]
+
+===================================================
 
 7.	Given the table usa_web_form and respective data content, what does the following SQL code retrieves?
  SELECT * 
@@ -130,41 +169,60 @@ abi_last_name = 'Foo
 ![alt text](images/image2.png)
 
  
-A	Will not retrieve anything because some WHERE statements are conflicting  
-B	Will retrieve 2 records. IDs 2, 3  
-C	Will retrieve 1 record. ID 3
-D	 Will retrieve all 4 records. IDs 1, 2, 3, 4
+- A)	Will not retrieve anything because some WHERE statements are conflicting  
+- B)	Will retrieve 2 records. IDs 2, 3  
+- C)	Will retrieve 1 record. ID 3
+- D)	Will retrieve all 4 records. IDs 1, 2, 3, 4
+
+===================================================
+
+# [**RESPUESTA 7 - A**]
+
+===================================================
 
 8.	Considering the tables below, please select the correct SQL statement that will retrieve the amount of unique visited_pages from each consumer identified by abi_email that have an entry in usa_web_form, by matching via cookie_id.
  
+ ![alt text](images/image3.png)
 
-	SELECT COUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id GROUP BY f.abi_email  
-	SELECT COUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id  
-	SELECT COUNT(v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id GROUP BY f.abi_email 
-	SELECT DISTINCT v.visited_page, f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.visited_page = v.visited_page 
-	SELECT AMOUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f, usa_page_views v WHERE f.abi_email = v.abi_email
+- A)	SELECT COUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id GROUP BY f.abi_email  
+- B) SELECT COUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id  
+- C) SELECT COUNT(v.visited_page), f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.cookie_id = v.cookie_id GROUP BY f.abi_email 
+- D) SELECT DISTINCT v.visited_page, f.abi_email FROM usa_web_form f JOIN usa_page_views v ON f.visited_page = v.visited_page 
+- E) SELECT AMOUNT(DISTINCT v.visited_page), f.abi_email FROM usa_web_form f, usa_page_views v WHERE f.abi_email = v.abi_email
+
+
+===================================================
+
+# [**RESPUESTA 8 - A**]
+
+===================================================
 
 9.	Considering the table below, what SQL statement should be used to standardize the field abi_gender to 'M' for male, 'F' for female and 'O' for other?
  
- ![alt text](images/image3.png)
+ ![alt text](images/image3-1.png)
 
-A	SELECT cookie_id, timestamp, abi_email CASE WHEN lower(abi_gender) IN ('male', 'men') THEN 'M' WHEN lower(abi_gender) IN ('f', 'female', 'girl') THEN 'F' WHEN lower(abi_gender) IN ('other') THEN 'O' END AS abi_gender FROM usa_web_form  
-B	SELECT cookie_id, timestamp, abi_email, NORMALIZE(abi_gender, 'M', 'F', 'O') FROM usa_web_form HAVING abi_gender in ('male', 'MEN', 'female', 'girl', 'other') 
-C	SELECT cookie_id, timestamp, abi_email, NORMALIZE(abi_gender AS 'M' WHEN 'male' OR 'men', 'F' WHEN 'girl' OR 'female', 'O' WHEN 'other') FROM usa_web_form 
-D	SELECT cookie_id, timestamp, abi_email, CASE abi_gender IN ('male', 'MEN', 'female', 'girl', 'other') THEN 'M', 'M', 'F', 'F', 'O' FROM usa_web_form
+- A)	SELECT cookie_id, timestamp, abi_email CASE WHEN lower(abi_gender) IN ('male', 'men') THEN 'M' WHEN lower(abi_gender) IN ('f', 'female', 'girl') THEN 'F' WHEN lower(abi_gender) IN ('other') THEN 'O' END AS abi_gender FROM usa_web_form  
+- B)	SELECT cookie_id, timestamp, abi_email, NORMALIZE(abi_gender, 'M', 'F', 'O') FROM usa_web_form HAVING abi_gender in ('male', 'MEN', 'female', 'girl', 'other') 
+- C)	SELECT cookie_id, timestamp, abi_email, NORMALIZE(abi_gender AS 'M' WHEN 'male' OR 'men', 'F' WHEN 'girl' OR 'female', 'O' WHEN 'other') FROM usa_web_form 
+- D)	SELECT cookie_id, timestamp, abi_email, CASE abi_gender IN ('male', 'MEN', 'female', 'girl', 'other') THEN 'M', 'M', 'F', 'F', 'O' FROM usa_web_form
+
+===================================================
+
+# [**RESPUESTA 9 - A**]
+
+===================================================
 
 10.	Unification Test 
+
 This test have been built around a dummy scenario related to consumer unification and have description as it follows: 
 BUSINESS RULES 
 After the consumer data is captured, the records go through an unification process, which assign the same ID for the same consumer. 
 The assigned ID is called td_id and for the same identified consumer, the same td_id is assigned. For this scenario, the column r_number (row number) have to be used as td_id. 
 To identify the same consumer across multiple rows of data, we use different columns that are considered consumer IDs. For this scenario, we will consider the following columns as consumer IDs:
 
-A	cookie_id 
-
-B	abi_email 
-
-C	abi_phone 
+- A)	cookie_id 
+- B)	abi_email 
+- C)	abi_phone 
 
 Considering above, we want you to work with the source_table table. 
 Example (please check the image below): 
@@ -251,3 +309,4 @@ https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights
 https://github.com/facebook/facebook-python-business-sdk
 Tip: revisar la carpeta examples de la documentación en git
 Adjunte la respuesta en un notebook en colab. Comparta el link de forma pública 
+
