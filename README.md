@@ -240,6 +240,11 @@ Using the same table source_table created, create a SQL SELECT statement that wi
 The result should have the same structure as the table result in screenshot above, but with proper processing of all 10 rows loaded previously. TIP: You can check your results manually before submitting the test
 R:
 
+===================================================
+
+# [**RESPUESTA 10**](respuestas/sql/respuesta_10.sql)
+
+===================================================
 
 11.	Consent Test. This test have been built a dummy scenario around consumer consents and have the description as it follows: 
 BUSINESS RULES 
@@ -273,6 +278,12 @@ Go to https://sqliteonline.com/ and use the DDL below to create the environment 
 
 CREATE TABLE abi_consents ( client_id VARCHAR(4), brand_name VARCHAR(15), consent VARCHAR(20) ); INSERT INTO abi_consents VALUES ('AF32', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('AF32', 'BRAHMA', 'MARKETINGACTIVATION'); INSERT INTO abi_consents VALUES ('YD71', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('ODA2', 'BRAHMA', null); INSERT INTO abi_consents VALUES ('LA94', 'BRAHMA', 'MARKETINGACTIVATION'); INSERT INTO abi_consents VALUES ('JA13', 'BRAHMA', 'MARKETING-ANALYTICS'); INSERT INTO abi_consents VALUES ('JA13', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('YD71', 'SKOL', 'TC-PP'); INSERT INTO abi_consents VALUES ('YD71', 'SKOL', 'MARKETING-ACTIVATION'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', 'TC-PP'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', 'MARKETING-ACTIVATION'); INSERT INTO abi_consents VALUES ('OSW1', 'BRAHMA', 'TC-PP'); INSERT INTO abi_consents VALUES ('KD81', 'SKOL', null);
 
+===================================================
+
+# [**RESPUESTA 11**](respuestas/sql/respuesta_11.sql)
+
+===================================================
+
 ### Python y SQL  - Capacidad de Programación (Realice solamente dos - Libre elección):
 
 12.	Programación Orientada a Objetos: Diseñe una clase vehículo, el cual tenga 4 variables: una para el color del vehículo, marca del vehículo, cantidad de llantas y velocidad del vehículo, esta clase debe contar con los métodos que retornan y modifican estos valores, es decir que en la ejecución del programa se pueda:
@@ -284,6 +295,12 @@ CREATE TABLE abi_consents ( client_id VARCHAR(4), brand_name VARCHAR(15), consen
 Si ve necesario implementar clases abstractas puede implementarlas.
 Adjunte la respuesta en un notebook en colab. Comparta el link de forma pública 
 
+===================================================
+
+# [**RESPUESTA 12**](respuestas/scripts/POO/)
+
+===================================================
+
 13.	Datos anidados: Cree una cuenta gratuita en Google Cloud y seguir el siguiente tutorial para destacar los datos públicos en bigquery (bigquery-public-data) para la prueba
 Utilizando la siguiente base de datos: 
 ruta: bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_20210131 
@@ -291,10 +308,18 @@ Se debe construir la siguiente tabla final:
  
 La base de datos para el ejercicio tiene un estructura anidada cómo la siguiente:
 
- 
+![alt text](images/Imagen6.png)
 
 Por lo que deberá desanidar los campos, comprimir los valores de event_params.value.(string_value, int_value, etc) y pivotear algunos campos para crear la tabla final. 
 Adjunte la query que logra esa tabla 
+
+===================================================
+
+# [**RESPUESTA 13**](respuestas/sql/respuesta_13.sql)
+
+===================================================
+
+![alt text](images/Captura.PNG)
 
 14.	Conexión API Facebook 
 Basado en el siguiente colab: Ejercicio API Facebook.ipynb
