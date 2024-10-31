@@ -335,3 +335,11 @@ https://github.com/facebook/facebook-python-business-sdk
 Tip: revisar la carpeta examples de la documentación en git
 Adjunte la respuesta en un notebook en colab. Comparta el link de forma pública 
 
+
+===================================================
+
+# [**RESPUESTA 14**](respuestas/scripts/Ejercicio_API_Facebook_2024.ipynb)
+
+Fue necesario cambiar la estructura de los datos, ya que la api fue modificada
+===================================================
+
